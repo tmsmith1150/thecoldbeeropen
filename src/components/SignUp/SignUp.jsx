@@ -35,12 +35,12 @@ export const SignUp = () => {
 
     // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
     return name === 'firstName' ? setFirstName(value) : setLastName(value);
-          
+
   };
 
   const collectEmail = (e) => {
     const { name, value } = e.target;
-    return name ==='email' ? setEmail(value) : null;
+    return name === 'email' ? setEmail(value) : null;
   }
 
   const handleFormSubmit = (e) => {
@@ -54,7 +54,7 @@ export const SignUp = () => {
     setEmail('');
   };
 
-  
+
 
   return (
     <SignUpStyles>
@@ -62,7 +62,7 @@ export const SignUp = () => {
         <h1>Sign up to join us at the 44th Annual Cold Beer Open</h1>
         <p>September 18th - 22nd</p>
         <div className="timer">
-          <p>We tee off in:</p>
+          <p>Tee minus:</p>
           <Timer duration={141 * 24 * 60 * 60 * 1000} />
         </div>
         <h2>
